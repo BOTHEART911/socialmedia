@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .barra {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+            background-color: transparent;
+            margin: 0; /* Elimina el margen, incluyendo el superior */
+            padding: 10px; /* Añade un poco de espacio alrededor de la barra */
+        }
+
+        button {
+            background-color: #ffffff;
+            border: none;
+            padding: 10px 5%; /* Espacio interno del botón ajustado para móviles */
+            cursor: pointer;
+            width: 90%; /* Botones ocupan el 90% del ancho del contenedor en dispositivos pequeños */
+            max-width: 300px; /* Limita el ancho máximo para pantallas grandes */
+            border-radius: 10px;
+            margin: 5px 0; /* Añade un margen vertical entre los botones */
+            display: flex;
+            justify-content: center; /* Centra el contenido horizontalmente */
+            align-items: center;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.7);
+            transition: all 0.2s ease;
+            text-align: center;
+            font-size: 1rem; /* Ajuste de fuente para que sea más legible en móviles */
+        }
+        
+        button i {
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+
+        button:active {
+            box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3), inset -3px -3px 6px rgba(255, 255, 255, 0.5);
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+<div class="barra">
+    <button id="contacto"><i class="fas fa-address-card"></i> Contacto</button>
+    <button id="pagina"><i class="fas fa-globe"></i> Página Web</button>
+    <button id="tienda"><i class="fas fa-store"></i> Tienda</button>
+    <button id="youtube"><i class="fab fa-youtube"></i> YouTube</button>
+</div>
+
+<script>
+    document.getElementById("contacto").addEventListener("click", function() {
+        window.location.href = "https://wa.me/message/LSECR7ZEJTSDF1";
+    });
+
+    document.getElementById("pagina").addEventListener("click", function() {
+        window.location.href = "https://opolania11.hotmart.host/bot-heart-6673847f-e32f-46a2-a28d-b34db64f2a09";
+    });
+
+    document.getElementById("tienda").addEventListener("click", function() {
+        window.location.href = "https://hotmart.com/es/club/bot-heart";
+    });
+
+    document.getElementById("youtube").addEventListener("click", function() {
+        window.location.href = "https://youtube.com/@BOTHEART?si=rA1KXty7xd6M1Tp6";
+    });
+</script>
+
+</body>
+</html>
